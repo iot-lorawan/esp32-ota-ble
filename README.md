@@ -80,7 +80,7 @@ esp32 OTA through BLE  with Siliconlabs EFR Connect App
       Connecting....
       Detecting chip type... ESP32-C3
       Running idf_monitor in directory e:\projectcode\esp32c3\gatt_server_service_table
-      Executing "D:\Users\Lenovo\.espressif\python_env\idf4.3_py3.8_env\Scripts\python.exe E:\ProjectCode\ESP32C3\IDF\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --decode-panic backtrace --target esp32c3 e:\projectcode\esp32c3\gatt_server_service_table\build\gatt_server_service_table_demo.elf -m 'D:\Users\Lenovo\.espressif\python_env\idf4.3_py3.8_env\Scripts\python.exe' 'E:\ProjectCode\ESP32C3\IDF\tools\idf.py'"...
+     
       [0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
       [0;33m--- Using \\.\COM5 instead...[0m
       --- idf_monitor on \\.\COM5 115200 ---
@@ -1497,7 +1497,7 @@ esp32 OTA through BLE  with Siliconlabs EFR Connect App
       Build:Feb  7 2021
       rst:0xc (RTC_SW_CPU_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
       Saved PC:0x40383922
-      0x40383922: esp_restart_noos at E:/ProjectCode/ESP32C3/IDF/components/esp32c3/system_api_esp32c3.c:137 (discriminator 1)
+      0x40383922: esp_restart_noos atIDF/components/esp32c3/system_api_esp32c3.c:137 (discriminator 1)
       SPIWP:0xee
       mode:DIO, clock div:1
       load:0x3fcd6100,len:0x1774
