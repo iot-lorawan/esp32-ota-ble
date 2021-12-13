@@ -468,7 +468,7 @@ static void gatts_profile_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_
 					
                 }
 				if (heart_rate_handle_table[IDX_CHAR_VAL_B] == param->write.handle){
-                    uint8_t length = param->write.len;
+                    uint16_t length = param->write.len;//modify uint8_t to uint16_t when mtu larger than 255
 					ESP_LOGI(GATTS_TABLE_TAG, "ota-data = %d",length);
 					err = esp_ota_write( update_handle, (const void *)param->write.value, length);
 		            if (err != ESP_OK) {
